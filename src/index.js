@@ -2,7 +2,7 @@ import './less/index.less'
 
 // Your code goes here!
 window.addEventListener('load', event => {
-    document.querySelector('.logo-heading').textContent += " has arrived";
+    document.querySelector('.logo-heading').style.fontSize = "7rem";
 
     // Altered Copyright in Footer to be Input for Reasons and set Style to look like normal
     document.querySelector('.footer input').style.backgroundColor = 'transparent';
@@ -83,7 +83,6 @@ copyright.addEventListener("select", event => {
 let images = document.querySelectorAll("img");
 images.forEach(image => {
     image.addEventListener("dblclick", event => {
-        console.log(event);
         if (event.target.style.transform != "scale(1.3)") {
             event.target.style.transform = "scale(1.3)";
         } else {
